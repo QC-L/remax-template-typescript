@@ -1,0 +1,26 @@
+{
+  "name": "{{ name }}",
+  "private": true,
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "main": "index.js",
+  "keywords": [],
+  "author": "{{{ author }}}",
+  "license": "MIT",
+  "scripts": {
+    "dev": "remax build -t {{ platform }} -w",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "NODE_ENV=production remax build -t {{ platform }}"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.1",
+    "react": "^16.8.6",
+    "remax": "{{ remaxVersion }}",
+    "remax-cli": "{{ remaxVersion }}",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {
+    "chokidar": "^2.1.8"
+  }
+}
