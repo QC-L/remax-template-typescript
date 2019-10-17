@@ -1,18 +1,13 @@
-# {{ name }}
+# remax-template-typescript
 
-> {{ description }}
+> This template was created for building a Remax project.
 
-## Build Setup
+Usage
 
-``` bash
-# install dependencies
-npm install
+This is a project template for `create-remax-app`.
 
-# run in miniapp
-npm run dev
-
-# build for production with miniapp
-npm run build
+```bash
+$ npx create-remax-app first-remax-app -t
+$ cd first-remax-app && npm i
+$ npm run dev
 ```
-
-For detailed explanation on how things work, consult the [docs for remax](https://remaxjs.org/).
